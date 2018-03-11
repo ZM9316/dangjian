@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_wz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="a9chou.com.fangjiazhuangApp.module.activity.MyWzActivity">
+
+    <include layout="@layout/bigevents_title"></include>
+
+    <TextView
+        android:id="@+id/wz_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:lineSpacingExtra="8px"
+
+        android:text="       我的我的我的鞍山鞍山李达康混合双打积分刷卡缴费了说服力科技时代分类"
+        android:textColor="@color/text_black"
+        android:textSize="40px"/>
+</LinearLayout>

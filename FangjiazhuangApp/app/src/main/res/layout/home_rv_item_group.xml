@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/home_rv_item_linearlayout_style"
+        android:layout_marginTop="36px"
+        >
+
+        <TextView
+            android:id="@+id/dwgl"
+            style="@style/homeActivityItem2TextViewStyle"
+
+            android:drawableTop="@drawable/dangwuguanli"
+            android:text="@string/dwgl" />
+
+        <TextView
+            android:id="@+id/jjgl"
+            style="@style/homeActivityItem2TextViewStyle"
+
+            android:drawableTop="@drawable/jijianguanli"
+            android:text="@string/jjgl"
+            />
+
+        <TextView
+            android:id="@+id/ghgl"
+            style="@style/homeActivityItem2TextViewStyle"
+
+            android:drawableTop="@drawable/gonghuiguanli"
+            android:text="@string/ghgl"
+            />
+
+        <TextView
+            android:id="@+id/tqgl"
+            style="@style/homeActivityItem2TextViewStyle"
+
+            android:drawableTop="@drawable/tuanqingguanli"
+            android:text="@string/tqgl"
+            />
+
+        <![CDATA[
+
+        />
+
+    ]]>
+    </LinearLayout>
+    //**********************
+
+    <LinearLayout
+        style="@style/home_rv_item_linearlayout_style"
+        android:layout_marginTop="50px"
+        >
+
+        <TextView
+            android:id="@+id/lxyz"
+            style="@style/homeActivityItem2TextViewStyle"
+            android:drawableTop="@drawable/liangxueyizuo"
+            android:text="@string/whwm" />
+
+        <TextView
+            android:id="@+id/dqjx"
+            style="@style/homeActivityItem2TextViewStyle"
+            android:drawableTop="@drawable/jixiao"
+            android:text="@string/dqjx"/>
+
+        <TextView
+            android:id="@+id/dqdt"
+            style="@style/homeActivityItem2TextViewStyle"
+            android:drawableTop="@drawable/dongtai"
+            android:text="@string/xxjh"/>
+
+        <TextView
+            android:id="@+id/tzgg"
+            style="@style/homeActivityItem2TextViewStyle"
+
+            android:drawableTop="@drawable/tonggao"
+            android:text="@string/tzgg"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2px"
+            android:layout_centerVertical="true"
+            android:background="@drawable/line"></View>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/home_rv_item_linearlayout_style"
+        android:layout_marginTop="36px"
+        >
+
+        <TextView
+            android:id="@+id/dzb"
+            style="@style/homeActivityItem2TextViewStyle"
+            android:drawableTop="@drawable/dangzhibu"
+            android:text="@string/dzb"
+            />
+
+        <TextView
+            android:id="@+id/fgh"
+            style="@style/homeActivityItem2TextViewStyle"
+
+            android:drawableTop="@drawable/fengonghui"
+            android:text="@string/fgh"
+            />
+
+        <TextView
+            android:id="@+id/tqzb"
+            style="@style/homeActivityItem2TextViewStyle"
+            android:drawableTop="@drawable/tuanzhibu"
+            android:text="@string/tqzb"
+            />
+        <TextView
+            android:id="@+id/dyxxt"
+            style="@style/more_text_style"
+            android:drawableTop="@drawable/dangyxx"
+            android:visibility="invisible"
+            android:text="@string/dyxx" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

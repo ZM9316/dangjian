@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/shyk_title"></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EBEBEB">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="543dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@color/white"
+                    android:layout_weight="2">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/shapl"
+                        android:id="@+id/huiyi_name">
+
+                        <TextView
+                            android:id="@+id/huiyi_name_tv"
+                            style="@style/more_text_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|left"
+                            android:text="会议名称" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:inputType="textPersonName"
+                            style="@style/more_text_style"
+                            android:gravity="center_vertical|left"
+                            android:ems="10"
+                            android:id="@+id/meet_name"
+                            android:background="@null"
+                            android:layout_weight="9"
+                            android:hint="请输入会议名称" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/shapl"
+                        android:id="@+id/canhui_renyuan">
+
+                        <TextView
+                            android:id="@+id/canhui_renyuan_tv"
+                            style="@style/more_text_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|left"
+                            android:text="参会人员" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:inputType="textPersonName"
+                            style="@style/more_text_style"
+                            android:gravity="center_vertical|left"
+                            android:ems="10"
+                            android:id="@+id/choose_join"
+                            android:clickable="true"
+                            android:focusableInTouchMode="false"
+                            android:background="@null"
+                            android:layout_weight="9"
+                            android:hint="请选择参会人员" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/shapl"
+                        android:id="@+id/liexiren_renyuan">
+
+                        <TextView
+                            android:id="@+id/liexiren_renyuan_tv"
+                            style="@style/more_text_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|left"
+                            android:text="列席人员" />
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:inputType="textPersonName"
+                            style="@style/more_text_style"
+                            android:gravity="center_vertical|left"
+                            android:ems="10"
+                            android:id="@+id/choose_attend"
+                            android:clickable="true"
+                            android:focusableInTouchMode="false"
+                            android:layout_weight="9"
+                            android:hint="请输入列席人员"
+                            android:background="@null"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/shapl"
+                        android:id="@+id/huiyi_didian">
+
+                        <TextView
+                            android:id="@+id/huiyi_didian_tv"
+                            style="@style/more_text_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|left"
+                            android:text="会议地点" />
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:inputType="textPersonName"
+                            style="@style/more_text_style"
+                            android:gravity="center_vertical|left"
+                            android:ems="10"
+                            android:id="@+id/place"
+                            android:clickable="true"
+                            android:focusableInTouchMode="false"
+                            android:background="@null"
+                            android:layout_weight="9"
+                            android:hint="请输入会议地点" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="18dp"
+
+                    android:layout_weight="2">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/shapl"
+                        android:id="@+id/start_time">
+
+
+                        <TextView
+                            android:text="开始时间"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView7"
+                            style="@style/more_text_style"
+                            android:gravity="center_vertical|left"
+                            android:layout_weight="1" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:inputType="textPersonName"
+                            style="@style/more_text_style"
+                            android:gravity="center_vertical|left"
+                            android:ems="10"
+                            android:id="@+id/choose_start"
+                            android:clickable="true"
+                            android:focusableInTouchMode="false"
+                            android:background="@null"
+                            android:layout_weight="9"
+                            android:hint="请输入会议开始时间" />
+                    </LinearLayout>
+
+                    <!--<LinearLayout-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="48dp"-->
+                        <!--android:background="@drawable/shapl"-->
+                        <!--android:id="@+id/end_time">-->
+
+                        <!--<TextView-->
+                            <!--android:text="结束时间"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:id="@+id/textView8"-->
+                            <!--style="@style/more_text_style"-->
+                            <!--android:gravity="center_vertical|left"-->
+                            <!--android:layout_weight="1" />-->
+
+                        <!--<EditText-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:inputType="textPersonName"-->
+                            <!--style="@style/more_text_style"-->
+                            <!--android:gravity="center_vertical|left"-->
+                            <!--android:ems="10"-->
+                            <!--android:id="@+id/choose_end"-->
+                            <!--android:clickable="true"-->
+                            <!--android:focusableInTouchMode="false"-->
+                            <!--android:background="@null"-->
+                            <!--android:layout_weight="9"-->
+                            <!--android:hint="请输入会议结束时间" />-->
+                    <!--</LinearLayout>-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/shapl"
+                    android:layout_weight="2">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shapl"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:inputType="textPersonName"
+                        android:textSize="36px"
+                        android:background="@null"
+                        android:gravity="top|left"
+                        android:ems="10"
+                        android:id="@+id/meet_agenda"
+                        android:hint="请输入会议议程" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_weight="4">
+
+                        <Button
+                            android:text="发布"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/release_btn"
+                            android:gravity="center"
+                            style="@style/more_text_style"
+                            android:textColor="@color/white"
+                            android:background="@drawable/shopinfo"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

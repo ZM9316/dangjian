@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_more"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="a9chou.com.fangjiazhuangApp.module.activity.DzzglActivity">
+
+    <include layout="@layout/shyk_title"></include>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/centerbg"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="57px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="20px"
+                    android:layout_height="55px"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="38px"
+                    android:src="@color/text_red" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20px"
+                    android:text="@string/xxl"
+                    android:textColor="@color/text_red"
+                    android:textSize="52px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginTop="19px"
+                android:background="@color/line_color"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="63px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/bzjs"
+                    style="@style/more_text_style"
+                    android:drawableTop="@drawable/zzjgt"
+                    android:text="@string/zzjs" />
+
+                <TextView
+                    android:id="@+id/dwh"
+                    style="@style/more_text_style"
+                    android:drawableTop="@drawable/zzjgt"
+                    android:text="@string/dwh" />
+
+                <TextView
+                    android:id="@+id/zxzxx"
+                    style="@style/more_text_style"
+                    android:drawableTop="@drawable/zzjgt"
+                    android:text="@string/zxzxx" />
+
+                <TextView
+                    android:id="@+id/ztzr"
+                    style="@style/more_text_style"
+                    android:drawableTop="@drawable/dangyxx"
+                    android:text="@string/ztzr" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="63px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dwgkl"
+                    style="@style/more_text_style"
+                    android:drawableTop="@drawable/dangyxx"
+                    android:text="@string/dwgk" />
+
+                <TextView
+                    android:id="@+id/dyxx"
+                    style="@style/more_text_style"
+                    android:drawableTop="@drawable/dangyxx"
+                    android:text="@string/dyxx" />
+
+                <TextView
+                    android:id="@+id/zzgxxx"
+                    style="@style/more_text_style"
+                    android:drawableTop="@drawable/zhuanruzc"
+                    android:text="@string/dyjz" />
+
+                <TextView
+                    android:id="@+id/dyldxx"
+                    style="@style/more_text_style"
+                    android:drawableTop="@drawable/ldxx"
+                    android:text="@string/dyldxx" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="63px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/jjfz"
+                    style="@style/more_text_style"
+                    android:drawableTop="@drawable/dangyxx"
+                    android:text="@string/jjfz" />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/dfsj"-->
+                    <!--style="@style/more_text_style"-->
+                    <!--android:drawableTop="@drawable/dangyxx"-->
+                    <!--android:text="@string/dfsj" />-->
+                <TextView
+                    android:id="@+id/dyxxt"
+                    style="@style/more_text_style"
+                    android:drawableTop="@drawable/dangyxx"
+                    android:visibility="invisible"
+                    android:text="@string/dyxx" />
+
+                <TextView
+                    android:id="@+id/zzgxxxt"
+                    style="@style/more_text_style"
+                    android:drawableTop="@drawable/zhuanruzc"
+                    android:visibility="invisible"
+                    android:text="@string/dyjz" />
+
+                <TextView
+                    android:id="@+id/dyldxxt"
+                    style="@style/more_text_style"
+                    android:drawableTop="@drawable/ldxx"
+                    android:visibility="invisible"
+                    android:text="@string/dyldxx" />
+
+            </LinearLayout>
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginTop="63px"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/zbgl"-->
+                    <!--style="@style/more_text_style"-->
+                    <!--android:drawableTop="@drawable/dangyxx"-->
+                    <!--android:text="@string/zbgl" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/null1"-->
+                    <!--style="@style/more_text_style"-->
+                    <!--android:drawableTop="@null"-->
+                    <!--android:text="          " />-->
+                <!--<TextView-->
+                    <!--android:id="@+id/null2"-->
+                    <!--style="@style/more_text_style"-->
+                    <!--android:drawableTop="@null"-->
+                    <!--android:text="          " />-->
+                <!--<TextView-->
+                    <!--android:id="@+id/null3"-->
+                    <!--style="@style/more_text_style"-->
+                    <!--android:drawableTop="@null"-->
+                    <!--android:text="          " />-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

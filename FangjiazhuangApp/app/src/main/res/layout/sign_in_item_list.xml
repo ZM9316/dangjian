@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#f7f6ec"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="38px"
+        android:layout_marginRight="38px"
+        android:background="@color/line_color"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px">
+
+        <ImageView
+            android:id="@+id/sign_in_item_list_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="38px"
+            android:layout_marginLeft="38px"
+            android:layout_marginTop="38px" />
+
+        <TextView
+            android:id="@+id/sign_in_item_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="42px"
+            android:layout_toRightOf="@id/sign_in_item_list_icon"
+            android:textColor="#393939"
+            android:textSize="44px" />
+
+        <Button
+            android:id="@+id/sign_in_tel_btn"
+            style="@style/sign_in_btn_style"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/sign_in_btn"
+            android:drawableLeft="@drawable/tel"
+            android:paddingLeft="30px"
+            android:paddingRight="35px"
+            android:text="@string/call_by_tel" />
+
+        <Button
+            android:id="@+id/sign_in_sign_btn"
+            style="@style/sign_in_btn_style"
+            android:layout_toLeftOf="@id/sign_in_tel_btn"
+            android:background="@drawable/sign_in_btn"
+            android:text="@string/sign_in"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

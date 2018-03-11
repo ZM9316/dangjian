@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tool_bar"
+    android:layout_width="match_parent"
+    android:layout_height="200px"
+    android:background="@color/text_red"
+    >
+
+    <RelativeLayout
+         android:id="@+id/big_events_title_relative"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        >
+
+        <ImageView
+            android:id="@+id/title_left_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="35px"
+            android:layout_marginTop="80px"
+            android:src="@drawable/dh"/>
+
+        <TextView
+            android:id="@+id/title_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100px"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="56px"
+            />
+
+        <ImageView
+            android:id="@+id/title_ld"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="25px"
+            android:layout_marginRight="28px"
+            android:layout_marginTop="70px"
+            android:src="@drawable/ld"/>
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35px"
+            android:layout_marginTop="90px"
+            android:layout_toLeftOf="@id/title_ld"
+            android:src="@drawable/search"/>
+    </RelativeLayout>
+
+
+    <!-- 标题 -->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/search_linear"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+         >
+
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="90px"
+            android:layout_weight="3"
+            android:background="@drawable/linearlayout_corner_search"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:paddingBottom="5px"
+                android:paddingLeft="25px"
+                android:paddingRight="20px"
+                android:paddingTop="15px"
+                android:scaleType="fitXY"
+                android:src="@drawable/gray_search"/>
+
+            <EditText
+                android:id="@+id/big_events_search_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:completionThreshold="1"
+                android:hint="请输入关键字"
+                android:textSize="40px"/>
+            <!--android:imeOption="actionSearch"的作用是将回车两字改为搜索，-->
+            <!--android:singleLine="true"的作用是防止搜索框换行。-->
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/search_abolish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="110px"
+            android:scaleType="fitXY"
+            android:text="取消"
+            android:textColor="#ffffff"
+            android:textSize="40px"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

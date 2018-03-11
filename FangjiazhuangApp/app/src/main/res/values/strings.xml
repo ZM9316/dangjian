@@ -1,0 +1,283 @@
+<resources>
+    <string name="app_name">智慧党建</string>
+    <string name="updatecontent">1.修复BUG\n2.优化界面\n3.向天空大声的呼喊说声妈卖批\n4.欢迎大家Star和提issue\n5.github:<a href='http://github.com/alexliusheng'>http://github.com/alexliusheng</a></string>
+
+    <string name="dqjx">党群绩效</string>
+    <string name="lxyz">两学一做</string>
+    <string name="dwgl">党建政工</string>
+    <string name="jjgl">纪律检查</string>
+    <string name="dyfw">党员服务</string>
+    <string name="ghgl">工会管理</string>
+    <string name="ffxdzz">党员服务</string>
+    <string name="dzb">党支部</string>
+    <string name="tzgg">通知公告</string>
+    <string name="fgh">分工会</string>
+    <string name="dqdt">党纪党章</string>
+    <string name="tqzb">团(青)支部</string>
+    <string name="gd">更  多</string>
+    <string name="unametext">账号:</string>
+    <string name="pwordtext">密码:</string>
+    <string name="idtext">ID:</string>
+    <string name="unameedit">手机号/用户名/邮箱</string>
+    <string name="pwordedit">请填写密码</string>
+    <string name="idedit">请填写X位id</string>
+    <string name="forget_password"><u>忘记密码</u></string>
+    <string name="home">首页</string>
+    <string name="zxxx">在线学习</string>
+    <string name="hd">活动</string>
+    <string name="mine">我的</string>
+    <string name="djdt">党建动态</string>
+    <string name="permission_control">权限控制</string>
+    <string name="permission_allow">已经授权！</string>
+    <string name="permission_refuse">拒绝授权，提示请求许可理由！</string>
+    <string name="permission_noAsk">拒绝授权，不再提醒！</string>
+
+    <string name="call_by_tel">电话联系</string>
+    <string name="sign_in">签 到</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="action_select_file">导入书本</string>
+    <string name="action_search_file">搜索文件</string>
+    <string name="action_add_bookmark">添加书签</string>
+    <string name="action_read_book">读书</string>
+
+    <string name="press_twice_to_exit">连续点击才能退出</string>
+    <string name="root">根目录</string>
+    <string name="add_files">加入书架</string>
+    <string name="choose_all">全选</string>
+    <string name="delete">取消</string>
+    <string name="bookpop_size">字体</string>
+    <string name="bookpop_light">亮度</string>
+    <string name="bookpop_card">书签</string>
+    <string name="bookpop_send">跳转</string>
+
+    <string name="read_setting_directory">目录</string>
+    <string name="read_setting_night">夜间</string>
+    <string name="read_setting_day">日间</string>
+    <string name="read_setting_pagemode">翻页</string>
+    <string name="read_setting_set">设置</string>
+    <string name="read_setting_pre">上一章</string>
+    <string name="read_setting_next">下一章</string>
+
+    <string name="setting_system">系统</string>
+    <string name="setting_dark">暗</string>
+    <string name="setting_bright">亮</string>
+    <string name="setting_add">A+</string>
+    <string name="setting_subtract">A-</string>
+    <string name="setting_default">默认</string>
+
+    <string name="font_default">系统默认</string>
+    <string name="font_qihei">羿创旗黑</string>
+    <string name="font_xinshou">新宋体</string>
+    <string name="font_wawa">娃娃体</string>
+    <string name="font_fzxinghei">行黑</string>
+    <string name="font_fzkatong">卡通</string>
+    <string name="font_bysong">繁宋体</string>
+
+    <string name="page_mode_simulation">仿真</string>
+    <string name="page_mode_cover">覆盖</string>
+    <string name="page_mode_slide">滑动</string>
+    <string name="page_mode_none">无</string>
+
+    <string name="readseting">设置</string>
+
+    <string name="aboutContent">如风小说阅读是专注于提供更舒适的阅读体验,主打本地阅读,操作方式简单易上手,目前支持txt格式。</string>
+
+    <string-array name="voicer_cloud_entries">
+        <item>小燕—女青、中英、普通话</item>
+        <item>小艾—女青、中英、普通话、支持情感</item>
+        <item>小宇—男青、中英、普通话</item>
+        <item>凯瑟琳—女青、英</item>
+        <item>亨利—男青、英</item>
+        <item>玛丽—女青、英</item>
+        <item>小研—女青、中英、普通话</item>
+        <item>小琪—女青、中英、普通话</item>
+        <item>小峰—男青、中英、普通话</item>
+        <item>小梅—女青、中英、粤语</item>
+        <item>小莉—女青、中英、台湾普通话</item>
+        <item>小蓉—女青、中、四川话</item>
+        <item>小芸—女青、中、东北话</item>
+        <item>小坤—男青、中、河南话</item>
+        <item>小强—男青、中、湖南话</item>
+        <item>小莹—女青、中、陕西话</item>
+        <item>小新—男童、中、普通话</item>
+        <item>楠楠—女童、中、普通话</item>
+        <item>老孙—男老、中、普通话</item>
+    </string-array>
+    <string-array name="voicer_cloud_values">
+        <item>xiaoyan</item>
+        <item>aisxa</item>
+        <item>xiaoyu</item>
+        <item>catherine</item>
+        <item>henry</item>
+        <item>vimary</item>
+        <item>vixy</item>
+        <item>xiaoqi</item>
+        <item>vixf</item>
+        <item>xiaomei</item>
+        <item>xiaolin</item>
+        <item>xiaorong</item>
+        <item>xiaoqian</item>
+        <item>xiaokun</item>
+        <item>xiaoqiang</item>
+        <item>vixying</item>
+        <item>xiaoxin</item>
+        <item>nannan</item>
+        <item>vils</item>
+    </string-array>
+
+    <string name="dzzdwxx">党组织单位信息</string>
+    <string name="dyxx">党员信息</string>
+    <string name="zzgxxx">党员转入转出</string>
+    <string name="dyldxx">流动党员</string>
+    <string name="zzjgt">党委委员</string>
+    <string name="xxl">信息栏</string>
+    <string name="zzjg">组织机构</string>
+
+    <string name="dzzgl">党组织管理</string>
+    <string name="ghgzgl">工会工作管理</string>
+    <string name="tqgzgl">团青工作管理</string>
+    <string name="jjjcgl">纪检监察管理</string>
+    <string name="dt">党  统</string>
+
+
+    <string name="zzjs">组织建设</string>
+    <string name="ldbh">劳动保护</string>
+    <string name="wthd">文体活动</string>
+    <string name="vgjs">亮采女工</string>
+    <string name="mzgl">民主管理</string>
+
+    <string name="tyxx">团员信息</string>
+    <string name="tytj">团员统计</string>
+    <string name="tqhd">团青活动</string>
+
+
+    <string name="jjjc">党纪检查</string>
+    <string name="xnjc">效能监察</string>
+    <string name="jdzr">监督责任</string>
+    <string name="sjgl">审计管理</string>
+    <string name="xfgl">信访管理</string>
+
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="app_tip">提示</string>
+    <string name="dzdg">党章党规</string>
+    <string name="zsjjh">总书记讲话</string>
+    <string name="pfjy">普法教育</string>
+    <string name="kscg">考试冲关</string>
+    <string name="khnr">考核内容</string>
+    <string name="djkh">党建考核</string>
+    <string name="dlkh">党廉考核</string>
+    <string name="ghkh">工会考核</string>
+    <string name="tqkh">团青考核</string>
+    <string name="khtb">考核通报</string>
+    <string name="dxzh">党小组会</string>
+    <string name="zbwyh">支部委员会</string>
+    <string name="zbdyh">支部党员大会</string>
+    <string name="wdk">党课</string>
+    <string name="wdkfb">&#160;&#160;&#160;&#160;党课课件&#160;&#160;&#160;&#160;</string>
+    <string name="hymc">测试</string>
+    <string name="zhdzb">综合党支部</string>
+    <string name="jydzb">经营党支部</string>
+    <string name="gcdzb">工程党支部</string>
+    <string name="yxdzb">运行党支部</string>
+    <string name="sbdzb">设备党支部</string>
+    <string name="zbpm">支部排名 </string>
+    <string name="zhfgh">综合分工会</string>
+    <string name="jyfgh">经营分工会</string>
+    <string name="gcfgh">工程分工会</string>
+    <string name="yxfgh">运行分工会</string>
+    <string name="sbfgh">设备分工会</string>
+    <string name="zhtzb">综合团支部</string>
+    <string name="jytzb">经营团支部</string>
+    <string name="gctzb">工程团支部</string>
+    <string name="yxtzb">运行团支部</string>
+    <string name="sbtzb">设备团支部</string>
+    <string name="zbwy"> 支部委员 </string>
+    <string name="shyk"> 三会一课 </string>
+    <string name="gddzqd">规定动作清单</string>
+    <string name="zbgz"> 支部规制 </string>
+    <string name="ndjh"> 年度计划 </string>
+    <string name="zbpp"> 支部品牌 </string>
+    <string name="hsgd">号手岗队</string>
+    <string name="wyh">委员会</string>
+    <string name="ghxzh">工会小组会</string>
+    <string name="gykt">工运课堂</string>
+    <string name="gykj">工运课件</string>
+    <string name="jjfz">积极分子</string>
+    <string name="jwwy">纪委委员</string>
+    <string name="ghwy">工会委员</string>
+    <string name="twwy">团委委员</string>
+    <string name="jczz">基层组织</string>
+    <string name="dwh">  党委办公会  </string>
+    <string name="zxzxx">集体学习</string>
+    <string name="ztzr">主体责任</string>
+    <string name="dfsj">党费收缴</string>
+    <string name="jwh">纪委办公会</string>
+    <string name="ghbgh">工会办公会</string>
+    <string name="bzgl">班组管理</string>
+    <string name="szts">素质提升</string>
+    <string name="lcng">靓彩女工</string>
+    <string name="twh">团委会</string>
+    <string name="yxyz">一学一做</string>
+    <string name="zthd">五小QC</string>
+    <string name="tqxx">团青信息</string>
+    <string name="dwgk">党务公开</string>
+    <string name="dwsj">党委书记</string>
+    <string name="zjl">总经理</string>
+    <string name="dwfsj">总经理\n党委副书记</string>
+    <string name="jwsj">纪委书记</string>
+    <string name="ldbz">党委委员</string>
+    <string name="zzgzb">政治工作部\n(党委宣传部)</string>
+    <string name="jjb">纪检办</string>
+    <string name="bzjs">班组建设</string>
+    <string name="whwm">文化文明</string>
+    <string name="dyjz">党员接转</string>
+    <string name="xsjw">学思践悟</string>
+    <string name="znbs">职能部室</string>
+    <string name="sahyk">三会一课</string>
+    <string name="zbgl">支部管理</string>
+    <string name="fghgl">分工会管理</string>
+    <string name="bgh">办公会</string>
+    <string name="qywh">企业文化</string>
+    <string name="wmcj">文明创建</string>
+    <string name="tqgl">团青管理</string>
+    <string name="dylb">党员列表</string>
+    <string name="tjfx">统计分析</string>
+    <string name="zrdy">转入党员</string>
+    <string name="zcdy">转出党员</string>
+    <string name="dyzrzc">党员转入转出</string>
+    <string name="xxlb">信息列表</string>
+    <string name="ztjy">专题教育</string>
+    <string name="xxjh">学习计划</string>
+    <string name="spjy">视频教育</string>
+    <string name="sxnd">书香宁电</string>
+    <string name="lxxm">立项项目</string>
+    <string name="jcjy">监察建议</string>
+    <string name="zgwc">整改完成</string>
+    <string name="zdh">职代会</string>
+    <string name="qybz">权益保障</string>
+    <string name="cxcx">创新创效</string>
+    <string name="jjjs">竞技竞赛</string>
+    <string name="ngw">女工委</string>
+    <string name="jgjg">巾帼建功</string>
+    <string name="mztj">民族团结</string>
+    <string name="gjgr">共建共荣</string>
+    <string name="zhzl">综合治理</string>
+    <string name="ddjt">道德讲堂</string>
+    <string name="whxg">文化宣贯</string>
+    <string name="zrqd">责任清单</string>
+    <string name="dyfz">党员发展</string>
+    <string name="qnxx">青年信息</string>
+    <string name="tqty">团青推优</string>
+    <string name="gdzb">各党支部</string>
+    <string name="jdsj">监督视角</string>
+    <string name="dydh">党员大会</string>
+    <string name="zwh">支委会</string>
+    <string name="zgb">党委办公室\n(党委组织部)</string>
+    <string name="cwgk">厂务公开</string>
+    <string name="ghwyh">工会委员会</string>
+
+</resources>

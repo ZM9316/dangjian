@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="a9chou.com.fangjiazhuangApp">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+
+    <!-- Required -->
+    <permission
+        android:name="a9chou.com.fangjiazhuangApp.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature"/>
+    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <uses-permission android:name="a9chou.com.fangjiazhuangApp.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="design_width"
+            android:value="1080">
+        </meta-data>
+        <meta-data
+            android:name="design_height"
+            android:value="1920">
+        </meta-data>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="fangjiazhuangApp.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+        <activity android:name=".module.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".module.MainActivity">
+
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".module.activity.LoginActivity">
+        </activity>
+        <activity android:name=".module.activity.BigEventsActivity">
+        </activity>
+        <activity android:name=".module.activity.DetailPageActivity">
+        </activity>
+        <activity android:name=".module.activity.IdeologicalBuildingActivity">
+        </activity>
+        <activity android:name=".module.activity.PartyServiceActivity">
+        </activity>
+        <activity android:name=".module.activity.OldMoviesActivity">
+        </activity>
+        <activity android:name=".module.activity.ZdjsActivity">
+        </activity>
+        <activity android:name=".module.activity.DjdtDetailsActivity">
+        </activity>
+        <activity android:name=".module.activity.HonoursActivity">
+        </activity>
+        <activity android:name=".module.activity.ThreeeLssonsActivity">
+        </activity>
+        <activity
+            android:name=".module.activity.ThreeLssonsXZActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+
+        <!-- android:windowSoftInputMode="adjustResize|stateHidden" -->
+
+        <activity android:name=".module.activity.SignInActivity">
+        </activity>
+        <activity android:name=".module.activity.SecretaryOnLineActivity">
+        </activity>
+        <activity android:name=".module.activity.WriteEmail">
+        </activity>
+        <activity android:name=".module.activity.TalkingActivity">
+        </activity>
+        <activity
+            android:name=".module.activity.ReadActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".module.activity.MarkActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".module.activity.ActivityXZActivity">
+        </activity>
+        <activity android:name=".module.activity.DzzglActivity">
+        </activity>
+        <activity android:name=".module.activity.MoreActivity">
+        </activity>
+        <activity android:name=".module.activity.DyxxActivity">
+        </activity>
+        <activity android:name=".module.activity.ClipImageActivity"/>
+        <activity android:name=".module.activity.GhgzglActivity">
+        </activity>
+        <activity android:name=".module.activity.TqgzglActivity">
+        </activity>
+        <activity android:name=".module.activity.JjjcglActivity">
+        </activity>
+        <activity
+            android:name=".module.activity.ZzjgtActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity android:name=".module.activity.WhiteActibity">
+        </activity>
+        <activity android:name=".module.activity.PayActivity">
+        </activity>
+        <activity android:name=".module.activity.LdbhActivity">
+        </activity>
+        <activity android:name=".module.activity.NgjsActivity">
+        </activity>
+        <activity android:name=".module.activity.WthdActivity">
+        </activity>
+        <activity android:name=".module.activity.MzglActivity">
+        </activity>
+        <activity android:name=".module.activity.TqqgzglActivity">
+        </activity>
+        <activity android:name=".module.activity.TyxxActivity">
+        </activity>
+        <activity android:name=".module.activity.JjjcActivity">
+        </activity>
+        <activity android:name=".module.activity.XnjcActivity">
+        </activity>
+        <activity android:name=".module.activity.JdzrActivity">
+        </activity>
+        <activity android:name=".module.activity.SjglActivity">
+        </activity>
+        <activity android:name=".module.activity.XfglActivity">
+        </activity>
+        <activity android:name=".module.activity.RecordActivity">
+        </activity>
+        <activity android:name=".module.activity.XdthActivity">
+        </activity>
+        <activity android:name=".module.activity.LrwzActivity">
+        </activity>
+        <activity android:name=".module.activity.DyldxxActivity">
+        </activity>
+        <activity android:name=".module.activity.ZrzcActivity">
+        </activity>
+        <activity android:name=".module.activity.ActivitySignInActivity">
+        </activity>
+        <activity android:name=".module.activity.QywhActivity">
+        </activity>
+        <activity android:name=".module.activity.MyActiveActivity">
+        </activity>
+        <activity android:name=".module.activity.MyMeetingActivity">
+        </activity>
+        <activity android:name=".module.activity.MyXXActivity">
+        </activity>
+        <activity android:name=".module.activity.ActiveMessageActivity">
+        </activity>
+        <activity android:name=".module.activity.WdxxActivity">
+        </activity>
+        <activity android:name=".module.activity.ActivityEditActivity">
+        </activity>
+        <activity android:name=".module.activity.MoreDynamicActivity">
+        </activity>
+        <activity android:name=".module.activity.MyMaterialActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+        </activity>
+        <activity android:name=".module.activity.ScspActivity">
+        </activity>
+        <activity android:name=".module.activity.MyReadActivity">
+        </activity>
+        <activity android:name=".module.activity.MyWzActivity">
+        </activity>
+        <activity android:name=".module.activity.SetPassActivity">
+        </activity>
+        <activity android:name=".module.activity.SetXXActivity">
+        </activity>
+        <activity android:name=".module.activity.MemberActivesActivity">
+        </activity>
+        <activity android:name=".module.activity.MemberStatisticsActivity">
+        </activity>
+        <activity android:name=".wxapi.WXPayEntryActivity"></activity>
+        <activity android:name=".module.activity.DzdgActivity">
+        </activity>
+        <activity android:name=".module.activity.ZsjjhActivity">
+        </activity>
+        <activity android:name=".module.activity.PfjyActivity">
+        </activity>
+        <activity android:name=".module.activity.LxyzhActivity">
+        </activity>
+        <activity android:name=".module.activity.DzjxActivity">
+        </activity>
+        <activity android:name=".module.activity.KhnrActivity">
+        </activity>
+        <activity android:name=".module.activity.DjkhActivity">
+        </activity>
+        <activity android:name=".module.activity.DlkhActivity">
+        </activity>
+        <activity android:name=".module.activity.GhkhActivity">
+        </activity>
+        <activity android:name=".module.activity.TqkhActivity">
+        </activity>
+        <activity android:name=".module.activity.KhtbActivity">
+        </activity>
+        <activity android:name=".module.activity.OrganizationPictureActivity">
+        </activity>
+        <activity android:name=".module.activity.ActivityTuanwei">
+        </activity>
+        <activity android:name=".module.activity.ActivityGonghui">
+        </activity>
+        <activity android:name=".module.activity.PartygroupActivity">
+        </activity>
+        <activity android:name=".module.activity.ActivityInfo"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity android:name=".module.activity.ActivityTimePicker">
+        </activity>
+        <activity android:name=".module.activity.ActivityAttendMenberList">
+        </activity>
+        <activity android:name=".module.activity.ActivityMenberList">
+        </activity>
+        <activity android:name=".module.activity.ActivityShowInfo"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity android:name=".module.activity.ActivityPartyBranch">
+        </activity>
+        <activity android:name=".module.activity.ActivityShareUI">
+        </activity>
+        <activity android:name=".module.activity.ActivityLabour">
+        </activity>
+        <activity android:name=".module.activity.ActivityGroupBranch">
+        </activity>
+        <activity android:name=".module.activity.ActivityShareArticle">
+        </activity>
+        <activity android:name=".module.activity.ActivityCommitteeMan">
+        </activity>
+        <activity android:name=".module.activity.TwosessionsActivity">
+        </activity>
+        <activity android:name=".module.activity.ActivityMessage">
+        </activity>
+        <activity android:name=".module.activity.ActivitySubject">
+        </activity>
+        <activity android:name=".module.activity.ActivitySubjectH5"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".module.activity.ActivityOrganization_construction">
+        </activity>
+        <activity android:name=".module.activity.ActivityCulturalcivilization">
+        </activity>
+        <activity android:name=".module.activity.ActivityComprehensiveH5">
+        </activity>
+        <activity android:name=".module.activity.ActivityPartymemberList">
+        </activity>
+        <activity android:name=".module.activity.ActivityPartytransferList">
+        </activity>
+        <activity android:name=".module.activity.ActivityEffectivenessmonitor">
+        </activity>
+        <activity android:name=".module.activity.ActivityFlowmenber">
+        </activity>
+        <activity android:name=".module.activity.ActivityUnderstanding">
+        </activity>
+        <activity android:name=".module.activity.ActivityDemocraticManagement">
+        </activity>
+        <activity android:name=".module.activity.ActivityQualityImprovement">
+        </activity>
+        <activity android:name=".module.activity.ActivityBeautifulWoman">
+        </activity>
+        <activity android:name=".module.activity.ActivityCorporateCulture">
+        </activity>
+        <activity android:name=".module.activity.ActivityCivilizationCreation">
+        </activity>
+        <activity android:name=".module.activity.ActivityBranchManagement">
+        </activity>
+        <activity android:name=".module.activity.ActivityBranchContent">
+        </activity>
+        <activity android:name=".module.activity.ActivityTradeUnionManagement">
+        </activity>
+        <activity android:name=".module.activity.ActivityManagementYouthLeague">
+        </activity>
+        <activity android:name=".module.activity.ActivityThreeSessions">
+        </activity>
+        <activity android:name=".module.activity.ActivityThreeMeeting">
+        </activity>
+        <activity android:name=".module.activity.ActivityTwoMeeting">
+        </activity>
+        <activity android:name=".module.activity.ActivityNoticeBulletin">
+        </activity>
+        <activity android:name=".module.activity.ActivityThreeSessionStatistics">
+        </activity>
+        <activity android:name=".module.activity.ActivityStatisticalAnalysis">
+        </activity>
+        <activity android:name=".module.activity.ActivityConferenceSelection">
+        </activity>
+        <activity android:name=".module.activity.ActivityStaffInput">
+        </activity>
+
+       <!--***************************-->
+        <!-- Rich push 核心功能 since 2.0.6-->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:theme="@style/MyDialogStyle"
+            android:exported="false">
+        </activity>
+
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="a9chou.com.fangjiazhuangApp" />
+            </intent-filter>
+        </activity>
+        <!--<activity android:name=".module.activity.ZzjgfbActivity" />-->
+
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:process=":mult"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <!-- since 3.0.9 Required SDK 核心功能-->
+        <provider
+            android:authorities="a9chou.com.fangjiazhuangApp.DataProvider"
+            android:name="cn.jpush.android.service.DataProvider"
+            android:exported="false"
+            />
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="a9chou.com.fangjiazhuangApp" />
+            </intent-filter>
+
+        </service>
+        <!-- since 3.1.0 Required SDK 核心功能-->
+        <provider
+            android:authorities="a9chou.com.fangjiazhuangApp.DownloadProvider"
+            android:name="cn.jpush.android.service.DownloadProvider"
+            android:exported="true"
+            />
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
+                <category android:name="a9chou.com.fangjijiazhuangApp" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能-->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" android:exported="false"/>
+
+        <!-- User defined.  For test only  用户自定义的广播接收器-->
+        <receiver
+            android:name=".module.MyReceiver"
+            android:exported="false"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="a9chou.com.fangjiazhuangApp" />
+            </intent-filter>
+        </receiver>
+
+        <!-- User defined.  For test only  用户自定义接收消息器,3.0.7开始支持,目前新tag/alias接口设置结果会在该广播接收器对应的方法中回调-->
+        <receiver android:name=".utils.MyJPushMessageReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+                <category android:name="a9chou.com.fangjiazhuangApp"></category>
+            </intent-filter>
+        </receiver>
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="c7ba92b6eed5b4fdc485d723" /><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" /> <!--  </>值来自开发者平台取得的AppKey-->
+
+    </application>
+
+</manifest>

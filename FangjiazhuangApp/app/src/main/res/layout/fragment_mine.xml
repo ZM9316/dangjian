@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/home_title"></include>
+
+    <ScrollView
+        android:id="@+id/mine_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mine_background"
+                android:orientation="vertical">
+
+                <a9chou.com.fangjiazhuangApp.weight.CircleImageView
+                    android:id="@+id/circleImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="58px"
+                    android:background="@drawable/circleview_bg"/>
+
+                <TextView
+                    android:id="@+id/my_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="54px"
+                    android:layout_marginTop="34px"
+                    android:text="用户名"
+                    android:textColor="#ffffff"
+                    android:textSize="42px"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/wdzl"
+                android:layout_width="match_parent"
+                android:layout_height="120px">
+
+                <TextView
+                    style="@style/mine_item"
+                    android:text="用户信息"
+                    />
+
+                <ImageView
+                    style="@style/mine_item_iv"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/dark_gray"></View>
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/dfjn"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="120px"-->
+                <!--android:visibility="gone">-->
+
+                <!--<TextView-->
+                    <!--style="@style/mine_item"-->
+                    <!--android:text="我的党费"-->
+                    <!--/>-->
+
+                <!--<ImageView-->
+                    <!--style="@style/mine_item_iv"-->
+                    <!--/>-->
+            <!--</RelativeLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1px"-->
+                <!--android:background="@color/dark_gray"></View>-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/wdxx"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="120px"-->
+                <!--android:visibility="visible">-->
+
+                <!--<TextView-->
+                    <!--style="@style/mine_item"-->
+                    <!--android:text="我的消息" />-->
+
+                <!--<ImageView-->
+                    <!--style="@style/mine_item_iv" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1px"-->
+                <!--android:background="@color/dark_gray"-->
+                <!--&gt;</View>-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/wdxd"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="120px"-->
+                <!--android:visibility="gone">-->
+
+                <!--<TextView-->
+                    <!--style="@style/mine_item"-->
+                    <!--android:text="我的心得"-->
+                    <!--/>-->
+
+                <!--<ImageView-->
+                    <!--style="@style/mine_item_iv"-->
+                    <!--/>-->
+            <!--</RelativeLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1px"-->
+                <!--android:background="@color/dark_gray"-->
+                <!--android:visibility="gone"></View>-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/wyddsj"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="120px"-->
+                <!--android:visibility="gone">-->
+
+                <!--<TextView-->
+                    <!--style="@style/mine_item"-->
+                    <!--android:text="我阅读的书籍"-->
+                    <!--/>-->
+
+                <!--<ImageView-->
+                    <!--style="@style/mine_item_iv"-->
+                    <!--/>-->
+            <!--</RelativeLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1px"-->
+                <!--android:background="@color/dark_gray"-->
+                <!--android:visibility="gone"></View>-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/wcjdhy"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="120px"-->
+                <!--android:visibility="gone">-->
+
+                <!--<TextView-->
+                    <!--style="@style/mine_item"-->
+                    <!--android:text="我参加的会议"-->
+                    <!--/>-->
+
+                <!--<ImageView-->
+                    <!--style="@style/mine_item_iv"-->
+                    <!--/>-->
+            <!--</RelativeLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1px"-->
+                <!--android:background="@color/dark_gray"-->
+                <!--android:visibility="gone"></View>-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/wcjdhd"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="120px"-->
+                <!--android:visibility="gone">-->
+
+                <!--<TextView-->
+                    <!--style="@style/mine_item"-->
+                    <!--android:text="我参加的活动"-->
+                    <!--/>-->
+
+                <!--<ImageView-->
+                    <!--style="@style/mine_item_iv"-->
+                    <!--/>-->
+            <!--</RelativeLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1px"-->
+                <!--android:background="@color/dark_gray"></View>-->
+
+            <RelativeLayout
+                android:id="@+id/xgmm"
+                android:layout_width="match_parent"
+                android:layout_height="120px">
+
+                <TextView
+                    style="@style/mine_item"
+                    android:text="修改密码"
+                    />
+
+                <ImageView
+                    style="@style/mine_item_iv"
+                    />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/dark_gray"></View>
+
+            <RelativeLayout
+                android:id="@+id/version_info"
+                android:layout_width="match_parent"
+                android:layout_height="120px">
+
+                <TextView
+                    style="@style/mine_item"
+                    android:text="版本信息" />
+
+                <!--<ImageView
+                    style="@style/mine_item_iv"
+                    />-->
+                <TextView
+                    android:id="@+id/Version"
+                    style="@style/mine_item"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:text="V1.0" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/dark_gray"></View>
+
+
+
+            <Button
+                android:id="@+id/login_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80px"
+                android:layout_marginLeft="140px"
+                android:layout_marginRight="140px"
+                android:layout_marginTop="640px"
+                android:background="@color/text_red"
+                android:text="退出登录"
+                android:textColor="@color/white"
+                android:textSize="42px"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/net_err_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <include layout="@layout/net_not_work"></include>
+    </LinearLayout>
+</LinearLayout>

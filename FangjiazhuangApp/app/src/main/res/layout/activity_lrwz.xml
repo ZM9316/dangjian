@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lrwz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f5ec"
+    android:orientation="vertical"
+
+    tools:context="a9chou.com.fangjiazhuangApp.module.activity.LrwzActivity">
+
+    <include layout="@layout/shyk_title"></include>
+
+    <EditText
+        android:id="@+id/title_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34px"
+        android:layout_marginRight="34px"
+        android:layout_marginTop="54px"
+        android:background="@color/white"
+        android:hint="请输入文章标题"
+        android:paddingBottom="48px"
+        android:paddingLeft="38px"
+        android:paddingTop="48px"
+        android:textColor="#393939"
+        android:textSize="34px"/>
+
+    <EditText
+        android:id="@+id/xd_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34px"
+        android:layout_marginRight="34px"
+        android:layout_marginTop="26px"
+        android:background="@color/white"
+        android:hint="请输入心得体会\n  \n  \n  \n  \n  \n  \n  \n  \n  "
+        android:paddingLeft="34px"
+        android:paddingTop="48px"
+        android:textColor="#393939"
+        android:textSize="34px"/>
+
+    <Button
+        android:id="@+id/sc_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34px"
+        android:layout_marginRight="34px"
+        android:layout_marginTop="34px"
+        android:background="@color/text_red"
+        android:text="上传"
+        android:textColor="@color/white"
+        android:textSize="42px"/>
+</LinearLayout>

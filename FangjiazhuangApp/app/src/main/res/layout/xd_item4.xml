@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34px">
+
+        <TextView
+            android:id="@+id/xd_item4_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46px"
+            android:text="十九大心得"
+            android:textColor="@color/text_black"
+            android:textSize="38px"/>
+
+        <TextView
+            android:id="@+id/xd_item4_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@id/xd_item4_title"
+            android:text="2017.11.03 17:24"
+            android:textColor="#999999"
+            android:textSize="28px"/>
+
+        <TextView
+            android:id="@+id/xd_item4_sc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="64px"
+            android:text="删 除"
+            android:textColor="@color/text_red"
+            android:textSize="34px"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45px"
+        android:layout_marginTop="22px"
+        android:background="@drawable/look"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="62px"
+        android:layout_marginRight="64px"
+        android:layout_marginTop="42px"
+        android:background="@color/line_color"
+        ></View>
+</LinearLayout>

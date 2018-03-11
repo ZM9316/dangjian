@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="28px"
+>
+
+ <View
+     android:layout_width="wrap_content"
+     android:layout_centerVertical="true"
+     android:background="@drawable/line"
+     android:layout_height="2px"></View>
+
+    <TextView
+        android:id="@+id/home_title_item_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+         android:gravity="center"
+        android:text="控制层"
+        android:textColor="@color/mine_text"
+        android:textSize="40px"/>
+</RelativeLayout>

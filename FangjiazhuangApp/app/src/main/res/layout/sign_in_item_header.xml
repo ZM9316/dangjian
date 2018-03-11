@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sign_in_head_tv"
+        android:layout_width="match_parent"
+        android:layout_height="125px"
+        android:gravity="center_vertical"
+        android:paddingLeft="48px"
+        android:text="当前会议名称"
+        android:textColor="#333333"
+        android:textSize="44px"/>
+</LinearLayout>

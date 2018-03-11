@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200px"
+    android:background="@color/text_red"
+    >
+
+    <RelativeLayout
+        android:id="@+id/big_events_title_relative"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        >
+
+        <TextView
+            android:id="@+id/big_events_left_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="35px"
+            android:layout_marginTop="110px"
+            android:drawableLeft="@drawable/lb"
+            android:drawablePadding="20px"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="45px"/>
+
+        <TextView
+            android:id="@+id/big_events_title_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="105px"
+            android:text=" "
+            android:textColor="#ffffff"
+            android:textSize="56px"
+            />
+
+        <ImageView
+            android:id="@+id/big_events_search_iv"
+            android:layout_width="55px"
+            android:layout_height="55px"
+            android:layout_alignBottom="@+id/big_events_left_back"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_toLeftOf="@+id/shyk_xz"
+            android:layout_toStartOf="@+id/shyk_xz"
+            android:src="@drawable/search" />
+
+        <TextView
+            android:id="@+id/shyk_xz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/big_events_search_iv"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30px"
+            android:text="添加"
+            android:textColor="@color/white"
+            android:textSize="45px" />
+    </RelativeLayout>
+
+    <!-- 标题 -->
+    <LinearLayout
+        android:id="@+id/search_linear"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="90px"
+            android:layout_weight="3"
+            android:background="@drawable/linearlayout_corner_search"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:paddingBottom="5px"
+                android:paddingLeft="25px"
+                android:paddingRight="20px"
+                android:paddingTop="15px"
+                android:scaleType="fitXY"
+                android:src="@drawable/gray_search"/>
+
+            <EditText
+                android:id="@+id/big_events_search_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:completionThreshold="1"
+                android:hint="请输入关键字"
+                android:textSize="40px"/>
+            <!--android:imeOption="actionSearch"的作用是将回车两字改为搜索，-->
+            <!--android:singleLine="true"的作用是防止搜索框换行。-->
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/search_abolish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="100px"
+            android:scaleType="fitXY"
+            android:text="取消"
+            android:textColor="#ffffff"
+            android:textSize="45px"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

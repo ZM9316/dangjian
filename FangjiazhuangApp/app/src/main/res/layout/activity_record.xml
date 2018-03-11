@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_xdth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f5ec"
+    android:orientation="vertical"
+    tools:context="a9chou.com.fangjiazhuangApp.module.activity.RecordActivity"
+
+    >
+
+    <include layout="@layout/bigevents_title"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="84px"
+        android:text="语音"
+        android:textColor="#333"
+        android:textSize="64px"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130px">
+
+        <ImageView
+            android:id="@+id/ty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/txy"/>
+
+        <Chronometer
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:format="00:00:00"
+            android:textColor="#666"
+            android:textSize="80px"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="208px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/bf"
+            style="@style/xdth_tet_style"
+            android:drawableTop="@drawable/bf_selector"
+            android:text="播放"
+            />
+
+        <TextView
+            android:id="@+id/start"
+            style="@style/xdth_tet_style"
+            android:drawableTop="@drawable/begin_selector"
+            android:text="长按录音"
+            />
+
+        <TextView
+            android:id="@+id/sc"
+            style="@style/xdth_tet_style"
+            android:drawableTop="@drawable/sc_selector"
+            android:text="上传"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

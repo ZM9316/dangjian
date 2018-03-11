@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'android-apt'
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "a9chou.com.fangjiazhuangApp"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 5
+        versionName "1.5"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+//        resConfigs "en","zh"
+        useLibrary 'org.apache.http.legacy'
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi'
+        }
+    }
+//    useLibrary 'org.apache.http.legacy'
+//    abiFilters 'armeabi', 'armeabi-v7a', 'x86'
+
+    buildTypes {
+        debug {
+            matchingFallbacks = ['release', 'debug']
+        }
+        beta {
+            matchingFallbacks = ['release', 'debug']
+        }
+        release {
+            minifyEnabled true
+            buildConfigField("boolean", "LOG", "false")
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            shrinkResources true
+        }
+    }
+    sourceSets.all {
+    jniLibs.srcDir 'src/main/jinLibs'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+afterEvaluate {
+    tasks.matching {
+        it.name.startsWith('dex')
+    }.each { dx ->
+        if (dx.additionalParameters == null) {
+            dx.additionalParameters = []
+        }
+        dx.additionalParameters += '--multi-dex' // enable multidex
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.jwenfeng.pulltorefresh:library:1.0.3'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    //xsnow
+    compile 'com.vise.xiaoyaoyou:xsnow:2.1.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    //    butterknife
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile 'com.zhy:autolayout:1.4.5'
+    compile 'com.xhb:xbanner:1.3.0'
+    compile 'q.rorbin:badgeview:1.1.2'
+    compile 'com.lzy.widget:view-core:0.1.5'
+    //    GSYVideoPlayer
+    compile 'com.shuyu:gsyVideoPlayer-java:2.1.1'
+    compile 'com.shuyu:gsyVideoPlayer-ex_so:2.1.1'
+    //    LoadingDialog
+    compile 'com.github.gittjy:LoadingDialog:1.0.2'
+    //litepal数据库
+    compile 'org.litepal.android:core:1.3.1'
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    compile files('libs/juniversalchardet-1.0.3.jar')
+    //    65535
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.allenliu.versionchecklib:library:1.8.2'
+    //    上传视频
+    compile 'com.sh.shvideo:shvideolibrary:1.5.0'
+    //wechatpay
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    compile 'cz.msebera.android:httpclient:4.4.1.2'
+    compile files('libs/jcore-android-1.1.8.jar')
+    compile files('libs/jpush-android-3.1.0.jar')
+    compile 'com.contrarywind:Android-PickerView:3.2.7'
+    compile 'com.github.LuckSiege.PictureSelector:picture_library:v2.1.7'
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+}

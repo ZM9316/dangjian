@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/btn_camera"
+        android:layout_width="match_parent"
+        android:layout_height="136px"
+        android:background="@color/text_red"
+        android:gravity="center_vertical"
+        android:paddingLeft="56px"
+        android:text="选择输入方式"
+        android:textColor="#ffffff"
+        android:textSize="42px"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#f0f0f0"/>
+
+    <TextView
+        android:id="@+id/Manual_Input"
+        style="@style/more_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:text="手动输入人员" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#f0f0f0"></View>
+
+    <TextView
+        android:id="@+id/List_Selection"
+        style="@style/more_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:text="列表选择人员" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#f0f0f0"></View>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_red"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#ffffff"/>
+</LinearLayout>

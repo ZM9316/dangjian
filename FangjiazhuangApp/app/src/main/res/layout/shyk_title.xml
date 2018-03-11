@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200px"
+    android:background="@color/text_red"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        >
+
+        <TextView
+            android:id="@+id/shyk_left_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="35px"
+            android:layout_marginTop="110px"
+            android:drawableLeft="@drawable/lb"
+            android:drawablePadding="20px"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="45px"/>
+
+        <TextView
+            android:id="@+id/shyk_title_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="105px"
+            android:text=""
+            android:textColor="#ffffff"
+            android:maxEms="8"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="56px"
+            />
+
+        <TextView
+            android:id="@+id/shyk_xz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="35px"
+            android:layout_marginRight="45px"
+            android:layout_marginTop="104px"
+            android:drawableLeft="@drawable/j"
+            android:drawablePadding="15px"
+            android:gravity="center"
+            android:text="新增"
+            android:textColor="@color/white"
+            android:textSize="44px"/>
+    </RelativeLayout>
+</RelativeLayout>
