@@ -165,8 +165,8 @@ public class UrlUtil {
     //      党务公开
     public static final String AFFAIRS= "affairs.html";
     //      党委书记
-//    public static final String SPACTION= "Secretary_prescribed_action.html?";
-    public static final String SPACTION= "SubjectResponsibility.html?";
+    public static final String SPACTION= "Secretary_prescribed_action.html?";
+//    public static final String SPACTION= "SubjectResponsibility.html?";
     //      总经理
 //    public static final String GMPACTION= "general_manager_prescribed_action.html?";
     public static final String GMPACTION= "SubjectResponsibility.html?";

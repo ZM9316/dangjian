@@ -14,6 +14,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.InputType;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -166,6 +167,15 @@ public class ActivityShowInfo extends BaseActivity {
     @Override
     protected void initViews() {
         loadDialog();
+        //设置EditText的显示方式为多行文本输入
+        mchoose_join.setInputType(InputType.TYPE_TEXT_FLAG_MULTI_LINE);
+        mmeet_agenda.setInputType(InputType.TYPE_TEXT_FLAG_MULTI_LINE);
+        //改变默认的单行模式
+        mchoose_join.setSingleLine(false);
+        mmeet_agenda.setSingleLine(false);
+        //水平滚动设置为False
+        mchoose_join.setHorizontallyScrolling(false);
+        mmeet_agenda.setHorizontallyScrolling(false);
         j=getIntent().getStringExtra("typeId");
         k=getIntent().getStringExtra("partyOrgId");
         tit=getIntent().getStringExtra("tit");

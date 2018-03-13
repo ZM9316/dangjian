@@ -149,7 +149,7 @@ public class LoginActivity extends BaseActivity {
      * 网络请求
      */
     private void Go(Map<String, String> map) {
-        Log.i("zm9316","用户名："+map.get("username")+"密码："+map.get("password"));
+//        Log.i("zm9316","用户名："+map.get("username")+"密码："+map.get("password"));
 
         if (TextUtils.isEmpty(mUserName) || TextUtils.isEmpty(mPassWord)) {
             mDialog.dismiss();
@@ -185,13 +185,10 @@ public class LoginActivity extends BaseActivity {
                                  } else {
                                     jumpIntent(MainActivity.class);
                                 }
-
                             } else {
                                 mDialog.dismiss();
                                 ToastUtils.showToast("请输入正确的用户名或密码");
                             }
-
-
                         }
 
                         @Override

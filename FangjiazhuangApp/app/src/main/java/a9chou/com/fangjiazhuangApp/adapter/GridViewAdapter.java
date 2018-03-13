@@ -47,7 +47,10 @@ public class GridViewAdapter extends BaseAdapter {
 
         convertView = layoutInflater.inflate(R.layout.grid_item, null);
         mTextView = (TextView) convertView.findViewById(R.id.position);
-        mTextView.setText(list.get(position));
+        StringBuffer str = new StringBuffer(list.get(position).toString());
+        String strInsert = "\n";
+        str.insert(5,strInsert + "");
+        mTextView.setText(str);
         return convertView;
     }
 

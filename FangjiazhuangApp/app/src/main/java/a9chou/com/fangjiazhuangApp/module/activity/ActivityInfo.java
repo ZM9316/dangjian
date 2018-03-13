@@ -106,6 +106,15 @@ public class ActivityInfo extends BaseActivity {
         bftit = getIntent().getStringExtra("bftit");
         className = getIntent().getStringExtra("className");
         mShykXz.setVisibility(View.GONE);
+        //设置EditText的显示方式为多行文本输入
+        mchoose_join.setInputType(InputType.TYPE_TEXT_FLAG_MULTI_LINE);
+        mmeet_agenda.setInputType(InputType.TYPE_TEXT_FLAG_MULTI_LINE);
+        //改变默认的单行模式
+        mchoose_join.setSingleLine(false);
+        mmeet_agenda.setSingleLine(false);
+        //水平滚动设置为False
+        mchoose_join.setHorizontallyScrolling(false);
+        mmeet_agenda.setHorizontallyScrolling(false);
 //        mend_time.setVisibility(View.GONE);
         bundle = this.getIntent().getExtras();
         join = bundle.getString("join");
